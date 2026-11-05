@@ -23,7 +23,7 @@ export default function Landing() {
   return (
     <div>
       <nav className="land-nav row" style={{ justifyContent: 'space-between' }} aria-label="Site">
-        <Link to="/" className="brand" style={{ padding: 0 }}><span className="brand-mark"><FiRepeat size={22} /></span>CampusShare</Link>
+        <Link to="/" className="brand" style={{ padding: 0 }}><span className="brand-mark"><FiRepeat size={22} /></span>CampusResourceShare</Link>
         <div className="row">
           {user ? (
             <Link to="/dashboard" className="btn">Go to dashboard</Link>
@@ -38,7 +38,7 @@ export default function Landing() {
 
       <header className="land-hero">
         <h1>Borrow and lend resources on campus</h1>
-        <p>CampusShare lets verified students share cameras, calculators, books and lab equipment with each other. Borrowers put down a refundable deposit, so owners can lend with confidence.</p>
+        <p>CampusResourceShare lets verified students share cameras, calculators, books and lab equipment with each other. Borrowers put down a refundable deposit, so owners can lend with confidence.</p>
         <div className="row wrap">
           {user ? (
             <Link to="/browse" className="btn btn-lg">Browse items</Link>
@@ -95,7 +95,7 @@ export default function Landing() {
         </section>
       )}
 
-      <footer className="footer">© {new Date().getFullYear()} CampusShare</footer>
+      <footer className="footer">© {new Date().getFullYear()} CampusResourceShare</footer>
     </div>
   );
 }

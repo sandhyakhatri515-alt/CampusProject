@@ -11,7 +11,7 @@ function Side({ title, text }) {
   return (
     <aside className="auth-side">
       <Link to="/" className="brand" style={{ color: '#fff', padding: 0, position: 'relative' }}>
-        <span className="brand-mark" style={{ background: '#fff', color: 'var(--primary)', boxShadow: 'none' }}><FiRepeat size={22} /></span>CampusShare
+        <span className="brand-mark" style={{ background: '#fff', color: 'var(--primary)', boxShadow: 'none' }}><FiRepeat size={22} /></span>hare
       </Link>
       <div style={{ position: 'relative' }}>
         <h2>{title}</h2>

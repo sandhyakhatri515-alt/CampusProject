@@ -132,7 +132,7 @@ export default function Layout() {
     <div className="shell">
       {menu && <div className="scrim" onClick={() => setMenu(false)} />}
       <aside className={`sidebar ${menu ? 'open' : ''}`} aria-label="Main navigation">
-        <Link to="/dashboard" className="brand"><span className="brand-mark"><FiRepeat size={22} /></span>CampusShare</Link>
+        <Link to="/dashboard" className="brand"><span className="brand-mark"><FiRepeat size={22} /></span>CampusResourceShare</Link>
         <div className="sidebar-nav">
           {nav.map(({ to, icon: Icon, label, count }) => (
             <NavLink key={to} to={to} className={({ isActive }) => `nav-link ${isActive ? 'active' : ''}`}>
