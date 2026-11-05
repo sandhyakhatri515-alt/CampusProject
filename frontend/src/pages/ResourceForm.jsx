@@ -130,7 +130,7 @@ export default function ResourceForm() {
             <DataList id="location-options" items={locations} />
           </div>
           <div className="field">
-            <label htmlFor="days">Maximum loan (days)</label>
+            <label htmlFor="days">Maximum borrow (days)</label>
             <input id="days" type="number" min={1} max={60} className="input" value={form.max_borrow_days} onChange={set('max_borrow_days')} />
           </div>
           <div className="field full">
