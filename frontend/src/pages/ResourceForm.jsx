@@ -75,7 +75,7 @@ export default function ResourceForm() {
       const { data } = editing ? await api.put(`/resources/${id}`, body) : await api.post('/resources', body);
       toast.success(data.message);
       refreshLookups(); // a newly typed pick-up spot should appear in the lists right away
-      navigate(`/resources/${data.resource.id}`);
+      navigate('/my-listings');
     } catch (err) {
       toast.error(errorMessage(err));
     } finally {
