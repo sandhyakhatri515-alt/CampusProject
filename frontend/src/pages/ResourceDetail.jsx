@@ -7,7 +7,7 @@ import { useAuth } from '../context/AuthContext';
 import { Avatar, CategoryChip, Loader, StatusPill, Stars, Thumb, thumbBackground } from '../components/ui';
 import { RequestModal, ReportModal } from '../components/modals';
 import { useConfirm } from '../components/Confirm';
-import { fmtDate, priceLabel } from '../utils/format';
+import { fmtDate, money, priceLabel } from '../utils/format';
 import { useLookups } from '../context/LookupContext';
 import { toggleSaved } from '../utils/actions';
 
